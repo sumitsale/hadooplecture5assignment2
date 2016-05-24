@@ -1,0 +1,19 @@
+NameNode
+1.	It keeps the directory tree of all files in the file system
+2.	Tracks where across the cluster the file data is kept
+3.	Regulates client’s access to files.
+4.	It also executes file system operations such as renaming, closing, and opening files and directories.
+DataNode
+1.	Datanodes perform read-write operations on the file systems, as per client request.
+2.	They also perform operations such as block creation, deletion, and replication according to the instructions of the namenode.
+3.	Node where data is presented in advance before any processing takes place.
+Resource Manager
+1.	Responsible for tracking the resources in a cluster, and scheduling applications
+2.	High Availability feature
+3.	Responsible for accepting job-submissions, negotiating the first container for executing the application specific ApplicationMaster and provides the service for restarting the ApplicationMaster container on failure
+Node Manager
+1.	Takes care of the individual compute nodes in a Hadoop cluster
+2.	Keeping up-to date with the ResourceManager (RM)
+3.	monitoring resource usage (memory, CPU) of individual containers
+4.	tracking node-health
+5.	log managments
